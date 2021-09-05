@@ -201,8 +201,8 @@ class PlayState extends MusicBeatState
 
 			It serves to clear clutter and can easily be destroyed later. The problem is,
 			I don't actually know if this is optimised, I just kinda roll with things and hope
-			they work. I'm not actually really experienced compared to a lot of other developers in the scene, 
-			so I don't really know what I'm doing, I'm just hoping I can make a better and more optimised 
+			they work. I'm not actually really experienced compared to a lot of other developers in the scene,
+			so I don't really know what I'm doing, I'm just hoping I can make a better and more optimised
 			engine for both myself and other modders to use!
 		 */
 
@@ -432,13 +432,6 @@ class PlayState extends MusicBeatState
 
 				if (char.curCharacter == 'mom')
 					vocals.volume = 1;
-
-				/*
-					if (SONG.song.toLowerCase() == 'tutorial')
-					{
-						FlxTween.tween(FlxG.camera, {zoom: 1.3}, (Conductor.stepCrochet * 4 / 1000), {ease: FlxEase.elasticInOut});
-					}
-				 */
 			}
 			else
 			{
@@ -461,13 +454,6 @@ class PlayState extends MusicBeatState
 				}
 
 				camFollow.setPosition(getCenterX + (camDisplaceX * 8), getCenterY);
-
-				/*
-					if (SONG.song.toLowerCase() == 'tutorial')
-					{
-						FlxTween.tween(FlxG.camera, {zoom: 1}, (Conductor.stepCrochet * 4 / 1000), {ease: FlxEase.elasticInOut});
-					}
-				 */
 			}
 		}
 

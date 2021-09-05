@@ -24,9 +24,9 @@ class Main extends Sprite
 		This is the main class of the project, it basically connects everything together.
 		If you know what you're doing, go ahead and shoot! if you're looking for something more specific, however,
 		try accessing some game objects or meta files, meta files control the information (say what's playing on screen)
-		and game objects are like the boyfriend, girlfriend and the oppontent. 
+		and game objects are like the boyfriend, girlfriend and the oppontent.
 
-		Thanks for using my little modular engine project! I really appreciate it. 
+		Thanks for using my little modular engine project! I really appreciate it.
 		If you've got any suggestions let me know at Shubs#0404 on discord or create a ticket on the github.
 
 		To run through the basics, I've essentially created a rewrite of Friday Night Funkin that is supposed to be
@@ -44,7 +44,7 @@ class Main extends Sprite
 		you should run a pull request or fork and not create a new standalone repo for it. If you're actually going to mod the game however,
 		please, by all means, create your own repository for it instead as it would be your project then. I also request the engine is credited
 		somewhere in the project. (in the gamebanana page, wherever you'd like/is most convenient for you!)
-		if you don't wanna credit me that's fine, I just ask for the project to be in the credits somewhere 
+		if you don't wanna credit me that's fine, I just ask for the project to be in the credits somewhere
 		I do ask that you credit me if you make an actual modification to the engine or something like that, basically what I said above
 
 		I have no idea how licenses work so pretend I'm professional or something AAAA
@@ -72,49 +72,14 @@ class Main extends Sprite
 
 	/**
 		Small bit of documentation here, gameweeks are what control everything in my engine
-		this system will eventually be overhauled in favor of using actual week folders within the 
+		this system will eventually be overhauled in favor of using actual week folders within the
 		assets.
 		Enough of that, here's how it works
 		[ [songs to use], [characters in songs], [color of week], name of week ]
 	**/
 	public static var gameWeeks:Array<Dynamic> = [
 		[['Tutorial'], ['gf'], [FlxColor.fromRGB(129, 100, 223)], 'Funky Beginnings'],
-		[
-			['Bopeebo', 'Fresh', 'Dadbattle'],
-			['dad', 'dad', 'dad'],
-			[FlxColor.fromRGB(129, 100, 223)],
-			'vs. DADDY DEAREST'
-		],
-		[
-			['Spookeez', 'South', 'Monster'],
-			['spooky', 'spooky', 'monster'],
-			[FlxColor.fromRGB(30, 45, 60)],
-			'Spooky Month'
-		],
-		[
-			['Pico', 'Philly-Nice', 'Blammed'],
-			['pico'],
-			[FlxColor.fromRGB(111, 19, 60)],
-			'vs. Pico'
-		],
-		[
-			['Satin-Panties', 'High', 'Milf'],
-			['mom'],
-			[FlxColor.fromRGB(203, 113, 170)],
-			'MOMMY MUST MURDER'
-		],
-		[
-			['Cocoa', 'Eggnog', 'Winter-Horrorland'],
-			['parents-christmas', 'parents-christmas', 'monster-christmas'],
-			[FlxColor.fromRGB(141, 165, 206)],
-			'RED SNOW'
-		],
-		[
-			['Senpai', 'Roses', 'Thorns'],
-			['senpai', 'senpai', 'spirit'],
-			[FlxColor.fromRGB(206, 106, 169)],
-			"hating simulator ft. moawling"
-		],
+		[['Shantie','Judgement','Mutt'],['gf'],[FlxColor.fromRGB(128,128,128)],"Emo Dog" ]
 	];
 
 	// most of these variables are just from the base game!
