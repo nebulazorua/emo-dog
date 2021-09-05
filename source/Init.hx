@@ -31,6 +31,7 @@ class Init extends FlxState
 	 */
 	public static var gameSettings:Map<String, Dynamic> = [
 		'Downscroll' => [false, 0, 'Whether to have the strumline vertically flipped in gameplay.'],
+		'Hitsounds' => [false, 0, 'When enabled, a sound plays when you hit a note'],
 		'Centered Notefield' => [false, 0, 'Whether to center the strumline in gameplay.'],
 		'Auto Pause' => [true, 0, ''],
 		'FPS Counter' => [true, 0, 'Whether to display the FPS counter.'],
@@ -44,7 +45,7 @@ class Init extends FlxState
 		'Display Accuracy' => [true, 0, 'Whether to display your accuracy on screen.'],
 		'Disable Antialiasing' => [false, 0, 'Whether to disable Anti-aliasing. Helps improve performance in FPS.'],
 		'No Camera Note Movement' => [false, 0, 'When enabled, left and right notes no longer move the camera.'],
-		'Use Forever Chart Editor' => [true, 0, 'When enabled, uses the custom Forever Engine chart editor!'],
+		'Use Forever Chart Editor' => [false, 0, 'When enabled, uses the custom Forever Engine chart editor!'],
 		'Disable Note Splashes' => [
 			false,
 			0,

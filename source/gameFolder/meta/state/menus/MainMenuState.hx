@@ -12,6 +12,8 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import gameFolder.meta.MusicBeat.MusicBeatState;
+import gameFolder.gameObjects.userInterface.menu.*;
+import gameFolder.meta.data.*;
 
 using StringTools;
 
@@ -231,7 +233,19 @@ class MainMenuState extends MusicBeatState
 						switch (daChoice)
 						{
 							case 'story mode':
-								Main.switchState(this, new StoryMenuState());
+								PlayState.storyPlaylist = Main.gameWeeks[1][0];
+								PlayState.isStoryMode = true;
+
+								var diffic:String = '-' + CoolUtil.difficultyFromNumber(2).toLowerCase();
+								diffic = diffic.replace('-normal', '');
+
+								PlayState.storyDifficulty = 2;
+
+								PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
+								PlayState.storyWeek = 1;
+								PlayState.campaignScore = 0;
+								Main.switchState(this, new PlayState());
+
 							case 'freeplay':
 								Main.switchState(this, new FreeplayState());
 							case 'options':

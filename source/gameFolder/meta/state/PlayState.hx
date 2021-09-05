@@ -238,6 +238,9 @@ class PlayState extends MusicBeatState
 		if (curStage == 'highway')
 			add(stageBuild.limo);
 
+		if(curStage=='plaza')
+			gf.visible=false;
+
 		add(dadOpponent);
 		add(boyfriend);
 
@@ -1163,6 +1166,8 @@ class PlayState extends MusicBeatState
 
 				if (!coolNote.isSustainNote)
 				{
+					if(Init.trueSettings.get("Hitsounds"))
+						FlxG.sound.play(Paths.sound('Normal_Hit'),.8);
 					increaseCombo();
 					popUpScore(daRatings, baseRating, coolNote);
 					// health += 0.023;
@@ -1215,7 +1220,6 @@ class PlayState extends MusicBeatState
 		{
 			healthCall(false);
 			var stringDirection:String = UIStaticArrow.getArrowFromNumber(direction);
-
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 			character.playAnim('sing' + stringDirection.toUpperCase() + 'miss');
 
@@ -1536,7 +1540,7 @@ class PlayState extends MusicBeatState
 				transOut = FlxTransitionableState.defaultTransOut;
 
 				// change to the menu state
-				Main.switchState(this, new StoryMenuState());
+				Main.switchState(this, new MainMenuState());
 
 				// save the week's score if the score is valid
 				if (SONG.validScore)

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="TheBOYS.png">
+<SubTexture name="The BOYS0000" x="0" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0001" x="2425" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0002" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0003" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0004" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0005" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0006" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0007" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0008" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+<SubTexture name="The BOYS0009" x="4850" y="0" width="2425" height="1315" frameX="0" frameY="0" frameWidth="2425" frameHeight="1315" />
+</TextureAtlas>

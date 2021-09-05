@@ -33,7 +33,7 @@ class OptionsMenuState extends MusicBeatState
 	override public function create():Void
 	{
 		// define the categories
-		/* 
+		/*
 			To explain how these will work, each main category is just any group of options, the options in the category are defined
 			by the first array. The second array value defines what that option does.
 			These arrays are within other arrays for information storing purposes, don't worry about that too much.
@@ -52,6 +52,7 @@ class OptionsMenuState extends MusicBeatState
 				[
 					['Game Settings', null],
 					['', null],
+					['Hitsounds', getFromOption],
 					['Downscroll', getFromOption],
 					// ['Auto Pause', getFromOption],
 					['Display Accuracy', getFromOption],

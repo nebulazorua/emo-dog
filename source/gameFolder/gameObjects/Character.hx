@@ -84,14 +84,13 @@ class Character extends FNFSprite
 
 				flipX = true;
 			case 'luke':
-				flipX=true;
 				tex = Paths.getSparrowAtlas('characters/emo_dog');
 				frames = tex;
 				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByPrefix('singUP', 'up', 24, false);
 				animation.addByPrefix('singDOWN', 'down', 24, false);
-				animation.addByPrefix('singLEFT', 'right', 24, false);
-				animation.addByPrefix('singRIGHT', 'left', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
 
 				playAnim('idle');
 				scale.set(.7,.7);
